@@ -1,5 +1,5 @@
 id: 'ttihp0p3'
-name: 'Tiny Tapeout IHP SMoL'
+name: 'Tiny Tapeout IHP 0p3'
 end_date: '2025-05-06'
 project_dir: 'projects'
 top_level_macro: 'tt_ihp_wrapper'
