@@ -1,0 +1,109 @@
+121. Printing statistics.
+
+=== amm_inverter ===
+
+   Number of wires:                  2
+   Number of wire bits:              2
+   Number of public wires:           2
+   Number of public wire bits:       2
+   Number of ports:                  2
+   Number of port bits:              2
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     sg13g2_inv_1                    1
+
+   Chip area for module '\amm_inverter': 5.443200
+     of which used for sequential elements: 0.000000 (0.00%)
+
+=== tt_um_algofoogle_ro_worker ===
+
+   Number of wires:                718
+   Number of wire bits:            753
+   Number of public wires:         103
+   Number of public wire bits:     138
+   Number of ports:                  8
+   Number of port bits:             43
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                652
+     amm_inverter                    9
+     sg13g2_a21o_1                  14
+     sg13g2_a21oi_1                 85
+     sg13g2_a221oi_1                12
+     sg13g2_a22oi_1                 22
+     sg13g2_and2_1                  23
+     sg13g2_and3_1                   4
+     sg13g2_and4_1                   5
+     sg13g2_buf_1                   11
+     sg13g2_buf_16                   1
+     sg13g2_dfrbp_1                 82
+     sg13g2_inv_1                   42
+     sg13g2_nand2_1                 35
+     sg13g2_nand2b_1                11
+     sg13g2_nand3_1                 15
+     sg13g2_nand3b_1                 1
+     sg13g2_nand4_1                  8
+     sg13g2_nor2_1                  27
+     sg13g2_nor2b_1                  7
+     sg13g2_nor3_1                  11
+     sg13g2_nor4_1                   7
+     sg13g2_o21ai_1                 77
+     sg13g2_or2_1                    7
+     sg13g2_tiehi                   85
+     sg13g2_tielo                   10
+     sg13g2_xnor2_1                 24
+     sg13g2_xor2_1                  17
+
+   Area for cell type \amm_inverter is unknown!
+
+   Chip area for module '\tt_um_algofoogle_ro_worker': 8987.706000
+     of which used for sequential elements: 3868.300800 (43.04%)
+
+=== design hierarchy ===
+
+   tt_um_algofoogle_ro_worker        1
+     amm_inverter                    9
+
+   Number of wires:                736
+   Number of wire bits:            771
+   Number of public wires:         121
+   Number of public wire bits:     156
+   Number of ports:                 26
+   Number of port bits:             61
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                652
+     sg13g2_a21o_1                  14
+     sg13g2_a21oi_1                 85
+     sg13g2_a221oi_1                12
+     sg13g2_a22oi_1                 22
+     sg13g2_and2_1                  23
+     sg13g2_and3_1                   4
+     sg13g2_and4_1                   5
+     sg13g2_buf_1                   11
+     sg13g2_buf_16                   1
+     sg13g2_dfrbp_1                 82
+     sg13g2_inv_1                   51
+     sg13g2_nand2_1                 35
+     sg13g2_nand2b_1                11
+     sg13g2_nand3_1                 15
+     sg13g2_nand3b_1                 1
+     sg13g2_nand4_1                  8
+     sg13g2_nor2_1                  27
+     sg13g2_nor2b_1                  7
+     sg13g2_nor3_1                  11
+     sg13g2_nor4_1                   7
+     sg13g2_o21ai_1                 77
+     sg13g2_or2_1                    7
+     sg13g2_tiehi                   85
+     sg13g2_tielo                   10
+     sg13g2_xnor2_1                 24
+     sg13g2_xor2_1                  17
+
+   Chip area for top module '\tt_um_algofoogle_ro_worker': 9036.694800
+     of which used for sequential elements: 0.000000 (0.00%)
+
