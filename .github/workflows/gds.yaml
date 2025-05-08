@@ -122,6 +122,11 @@ jobs:
         working-directory: fill
         run: make fill KLAYOUT_CMD=/usr/bin/klayout -j2
 
+      - name: Rename top-level cell for IHP submission, convert to OAS
+        run: |
+          python fill/rename.py ihp/gds/tt_ihp_wrapper_final.gds ihp/gds/FMD_QNC_TTIHP0p3.gds FMD_QNC_TTIHP0p3
+          strm2oas ihp/gds/FMD_QNC_TTIHP0p3.gds ihp/gds/FMD_QNC_TTIHP0p3.oas
+
       - name: upload IHP submission directory
         uses: actions/upload-artifact@v4
         if: success() || failure()
