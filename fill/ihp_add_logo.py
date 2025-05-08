@@ -11,10 +11,18 @@ PRBOUNDARY_LAYER = 189
 PRBOUNDARY_DATATYPE = 4
 LOGO_LAYER = 134
 LOGO_DATATYPE = 0
-NOFILL_LAYER = 134
 NOFILL_DATATYPE = 23
 PIXEL_SIZE = 5  # um
 PIXEL_SPACING = 2  # um
+
+# We add nofill zones on Metal3 - Metal5, as otherwise we're getting 
+# Max. global density > 60%  DRC errors on these layers (M3.k, M4.k, M5.k).
+NOFILL_LAYERS = [
+    30,  # Metal3
+    50,  # Metal4
+    67,  # Metal5
+    134,  # TopMetal2
+]
 
 
 def generate_logo(lib, cell_name):
@@ -51,13 +59,17 @@ def generate_logo(lib, cell_name):
 
             # nofill:
             if r >= 128:
-                rect = gdstk.rectangle(
-                    (x_pos, y_pos),
-                    (x_pos + PIXEL_SIZE + PIXEL_SPACING, y_pos + PIXEL_SIZE + PIXEL_SPACING),
-                    layer=NOFILL_LAYER,
-                    datatype=NOFILL_DATATYPE,
-                )
-                cell.add(rect)
+                for layer in NOFILL_LAYERS:
+                    rect = gdstk.rectangle(
+                        (x_pos, y_pos),
+                        (
+                            x_pos + PIXEL_SIZE + PIXEL_SPACING,
+                            y_pos + PIXEL_SIZE + PIXEL_SPACING,
+                        ),
+                        layer=layer,
+                        datatype=NOFILL_DATATYPE,
+                    )
+                    cell.add(rect)
 
     return cell
 
