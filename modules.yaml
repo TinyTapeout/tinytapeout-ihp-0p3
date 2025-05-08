@@ -6,3 +6,7 @@ modules:
   - name: "factory_test"
     x: 1
     y: 2
+# Analog modules
+  - name: "htfab_r2r_dac"
+    x: 0
+    y: 2
