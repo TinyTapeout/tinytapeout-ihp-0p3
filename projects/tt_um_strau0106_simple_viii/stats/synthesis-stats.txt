@@ -1,0 +1,46 @@
+160. Printing statistics.
+
+=== tt_um_strau0106_simple_viii ===
+
+   Number of wires:               2779
+   Number of wire bits:           2814
+   Number of public wires:         300
+   Number of public wire bits:     335
+   Number of ports:                  8
+   Number of port bits:             43
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               2497
+     sg13g2_a21o_1                  36
+     sg13g2_a21oi_1                427
+     sg13g2_a221oi_1                68
+     sg13g2_a22oi_1                168
+     sg13g2_and2_1                  57
+     sg13g2_and3_1                   4
+     sg13g2_and4_1                   4
+     sg13g2_buf_1                   11
+     sg13g2_dfrbp_1                298
+     sg13g2_inv_1                  103
+     sg13g2_mux2_1                  29
+     sg13g2_mux4_1                  13
+     sg13g2_nand2_1                164
+     sg13g2_nand2b_1                61
+     sg13g2_nand3_1                 61
+     sg13g2_nand3b_1                 9
+     sg13g2_nand4_1                 25
+     sg13g2_nor2_1                 178
+     sg13g2_nor2b_1                 36
+     sg13g2_nor3_1                  54
+     sg13g2_nor4_1                  28
+     sg13g2_o21ai_1                306
+     sg13g2_or2_1                   19
+     sg13g2_or3_1                   11
+     sg13g2_or4_1                    1
+     sg13g2_tiehi                  298
+     sg13g2_xnor2_1                 21
+     sg13g2_xor2_1                   7
+
+   Chip area for module '\tt_um_strau0106_simple_viii': 34254.964800
+     of which used for sequential elements: 14057.971200 (41.04%)
+
