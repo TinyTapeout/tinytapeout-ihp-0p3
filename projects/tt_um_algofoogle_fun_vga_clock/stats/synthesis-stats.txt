@@ -1,0 +1,47 @@
+159. Printing statistics.
+
+=== tt_um_algofoogle_fun_vga_clock ===
+
+   Number of wires:               2411
+   Number of wire bits:           2446
+   Number of public wires:         216
+   Number of public wire bits:     251
+   Number of ports:                  8
+   Number of port bits:             43
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               2225
+     sg13g2_a21o_1                  29
+     sg13g2_a21oi_1                172
+     sg13g2_a221oi_1                15
+     sg13g2_a22oi_1                 45
+     sg13g2_and2_1                  70
+     sg13g2_and3_1                  17
+     sg13g2_and4_1                   5
+     sg13g2_buf_1                    5
+     sg13g2_dfrbp_1                202
+     sg13g2_inv_1                  106
+     sg13g2_mux2_1                   5
+     sg13g2_mux4_1                   3
+     sg13g2_nand2_1                197
+     sg13g2_nand2b_1                66
+     sg13g2_nand3_1                 70
+     sg13g2_nand3b_1                12
+     sg13g2_nand4_1                 28
+     sg13g2_nor2_1                 204
+     sg13g2_nor2b_1                 64
+     sg13g2_nor3_1                  59
+     sg13g2_nor4_1                  32
+     sg13g2_o21ai_1                224
+     sg13g2_or2_1                   43
+     sg13g2_or3_1                    9
+     sg13g2_or4_1                    3
+     sg13g2_tiehi                  207
+     sg13g2_tielo                    6
+     sg13g2_xnor2_1                214
+     sg13g2_xor2_1                 113
+
+   Chip area for module '\tt_um_algofoogle_fun_vga_clock': 28843.630200
+     of which used for sequential elements: 9529.228800 (33.04%)
+
