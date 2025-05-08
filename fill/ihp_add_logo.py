@@ -15,13 +15,15 @@ NOFILL_DATATYPE = 23
 PIXEL_SIZE = 5  # um
 PIXEL_SPACING = 2  # um
 
-# We add nofill zones on Metal3 - Metal5, as otherwise we're getting 
-# Max. global density > 60%  DRC errors on these layers (M3.k, M4.k, M5.k).
+METAL4_LAYER = 50
+METAL5_LAYER = 67
+TOPMETAL2_LAYER = 134
+
+# We add nofill zones on Metal4-Metal5, as otherwise we're getting
+# Max. global density > 60%  DRC errors on these layers (M4.k, M5.k).
 NOFILL_LAYERS = [
-    30,  # Metal3
-    50,  # Metal4
-    67,  # Metal5
-    134,  # TopMetal2
+    METAL5_LAYER,
+    TOPMETAL2_LAYER,
 ]
 
 
@@ -70,6 +72,12 @@ def generate_logo(lib, cell_name):
                         datatype=NOFILL_DATATYPE,
                     )
                     cell.add(rect)
+
+    # Generate small nofill on Metal4:
+    rect = gdstk.rectangle(
+        (0, 0), (500, 500), layer=METAL4_LAYER, datatype=NOFILL_DATATYPE
+    )
+    cell.add(rect)
 
     return cell
 
