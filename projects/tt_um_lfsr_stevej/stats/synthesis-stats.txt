@@ -1,0 +1,27 @@
+108. Printing statistics.
+
+=== tt_um_lfsr_stevej ===
+
+   Number of wires:                 55
+   Number of wire bits:             90
+   Number of public wires:           9
+   Number of public wire bits:      44
+   Number of ports:                  8
+   Number of port bits:             43
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 62
+     sg13g2_a21oi_1                  1
+     sg13g2_dfrbp_1                  9
+     sg13g2_inv_1                    1
+     sg13g2_nand2_1                 16
+     sg13g2_nand3_1                  8
+     sg13g2_o21ai_1                  1
+     sg13g2_tiehi                    9
+     sg13g2_tielo                   16
+     sg13g2_xnor2_1                  1
+
+   Chip area for module '\tt_um_lfsr_stevej': 832.809600
+     of which used for sequential elements: 424.569600 (50.98%)
+
