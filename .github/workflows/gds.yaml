@@ -28,8 +28,8 @@ jobs:
         with:
           submodules: recursive
 
-      - name: Free Disk Space (Ubuntu)
-        uses: jlumbroso/free-disk-space@main
+#      - name: Free Disk Space (Ubuntu)
+#        uses: jlumbroso/free-disk-space@main
 
       - name: setup python
         uses: actions/setup-python@v5
