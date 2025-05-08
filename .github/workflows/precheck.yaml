@@ -24,7 +24,7 @@ jobs:
       - name: Checkout TO repo
         uses: actions/checkout@v4
         with:
-          repository: IHP-GmbH/TO_Apr2025
+          repository: IHP-GmbH/TO_May2025
           path: ${{ env.TO_REPO_ROOT }}
 
       - name: Install KLayout
