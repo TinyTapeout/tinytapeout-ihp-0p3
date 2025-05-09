@@ -375,6 +375,30 @@ MACRO tt_um_htfab_r2r_dac
         RECT 91.050 153.980 91.350 154.980 ;
     END
   END uo_out[7]
+  PIN ua[0]
+    PORT
+      LAYER Metal5 ;
+        RECT 0.000 122.980 1.000 123.880 ;
+    END
+  END ua[0]
+  PIN ua[1]
+    PORT
+      LAYER Metal5 ;
+        RECT 0.000 106.980 1.000 107.880 ;
+    END
+  END ua[1]
+  PIN ua[2]
+    PORT
+      LAYER Metal5 ;
+        RECT 0.000 90.980 1.000 91.880 ;
+    END
+  END ua[2]
+  PIN ua[3]
+    PORT
+      LAYER Metal5 ;
+        RECT 0.000 74.980 1.000 75.880 ;
+    END
+  END ua[3]
   PIN VGND
     DIRECTION INOUT ;
     USE GROUND ;
