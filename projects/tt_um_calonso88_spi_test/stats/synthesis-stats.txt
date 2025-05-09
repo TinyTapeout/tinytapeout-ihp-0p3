@@ -2,42 +2,42 @@
 
 === tt_um_calonso88_spi_test ===
 
-   Number of wires:                506
-   Number of wire bits:            541
-   Number of public wires:         123
-   Number of public wire bits:     158
+   Number of wires:                764
+   Number of wire bits:            799
+   Number of public wires:         188
+   Number of public wire bits:     223
    Number of ports:                  8
    Number of port bits:             43
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                407
-     sg13g2_a21o_1                   7
-     sg13g2_a21oi_1                 16
-     sg13g2_a221oi_1                 9
-     sg13g2_a22oi_1                 19
-     sg13g2_and2_1                   5
-     sg13g2_and3_1                   2
-     sg13g2_and4_1                   3
+   Number of cells:                600
+     sg13g2_a21o_1                   5
+     sg13g2_a21oi_1                 25
+     sg13g2_a221oi_1                 2
+     sg13g2_a22oi_1                 58
+     sg13g2_and2_1                  35
+     sg13g2_and4_1                   2
      sg13g2_buf_1                    9
-     sg13g2_dfrbp_1                115
-     sg13g2_inv_1                    7
-     sg13g2_mux2_1                  94
-     sg13g2_nand2_1                 28
-     sg13g2_nand2b_1                 6
-     sg13g2_nand3_1                  7
-     sg13g2_nand3b_1                 4
-     sg13g2_nand4_1                  5
-     sg13g2_nor2_1                  17
-     sg13g2_nor2b_1                  1
-     sg13g2_nor3_1                  11
+     sg13g2_dfrbp_1                180
+     sg13g2_inv_1                    6
+     sg13g2_mux2_1                 161
+     sg13g2_nand2_1                 29
+     sg13g2_nand2b_1                 4
+     sg13g2_nand3_1                  5
+     sg13g2_nand3b_1                 3
+     sg13g2_nand4_1                 15
+     sg13g2_nor2_1                   5
+     sg13g2_nor2b_1                  7
+     sg13g2_nor3_1                   2
      sg13g2_nor4_1                   2
-     sg13g2_o21ai_1                 20
+     sg13g2_o21ai_1                 25
      sg13g2_or2_1                    2
+     sg13g2_or4_1                    1
      sg13g2_tielo                   14
      sg13g2_xnor2_1                  1
-     sg13g2_xor2_1                   3
+     sg13g2_xor2_1                   2
 
-   Chip area for module '\tt_um_calonso88_spi_test': 8958.789000
-     of which used for sequential elements: 5425.056000 (60.56%)
+   Chip area for module '\tt_um_calonso88_spi_test': 13843.494000
+     of which used for sequential elements: 8491.392000 (61.34%)
 
