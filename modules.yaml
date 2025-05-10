@@ -47,3 +47,30 @@ modules:
           - x: 319855
           - via: Via3_XY_so
           - y: 680490
+  - name: "NicklausThompson_555_1x1"
+    x: 3
+    y: 4
+    analog_dedicated:
+      pins: "ana[4], ana[5], ana[6]"
+      paths:
+        "pad_raw[24]":
+          - x: 1565400
+          - via: Via4_YX_so
+          - y: 1294490
+          - x: 1680145
+          - via: Via3_XY_so
+          - y: 1296490
+        "pad_raw[25]":
+          - x: 1562700
+          - via: Via4_YX_so
+          - y: 1396490
+          - x: 1680145
+          - via: Via3_XY_so
+          - y: 1398490
+        "pad_raw[26]":
+          - x: 1560000
+          - via: Via4_YX_so
+          - y: 1498490
+          - x: 1680145
+          - via: Via3_XY_so
+          - y: 1500490
