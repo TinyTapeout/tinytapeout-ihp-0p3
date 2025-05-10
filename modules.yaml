@@ -10,6 +10,40 @@ modules:
   - name: "htfab_r2r_dac"
     x: 0
     y: 2
+    analog_dedicated:
+      pins: "ana[12]"
+      paths:
+        "pad_raw[58]":
+          - x: 478990
+          - via: Via4_YX_so
+          - y: 988490
+          - x: 319855
+          - via: Via3_XY_so
+          - y: 987490
   - name: "algofoogle_antonalog"
     x: 0
     y: 1
+    analog_dedicated:
+      pins: "ana[13], ana[14], ana[15]"
+      paths:
+        "pad_raw[59]":
+          - x: 481690
+          - via: Via4_YX_so
+          - y: 886490
+          - x: 319855
+          - via: Via3_XY_so
+          - y: 884490
+        "pad_raw[60]":
+          - x: 478990
+          - via: Via4_YX_so
+          - y: 784490
+          - x: 319855
+          - via: Via3_XY_so
+          - y: 782490
+        "pad_raw[61]":
+          - x: 478990
+          - via: Via4_YX_so
+          - y: 682490
+          - x: 319855
+          - via: Via3_XY_so
+          - y: 680490
