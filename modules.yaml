@@ -10,6 +10,6 @@ modules:
   - name: "htfab_r2r_dac"
     x: 0
     y: 2
-  - name: "NicklausThompson_555_1x1"
+  - name: "algofoogle_antonalog"
     x: 0
     y: 1

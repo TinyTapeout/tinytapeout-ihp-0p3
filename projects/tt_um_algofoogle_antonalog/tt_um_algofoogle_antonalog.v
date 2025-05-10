@@ -6,8 +6,6 @@
 `default_nettype none
 
 module tt_um_algofoogle_antonalog (
-    input  wire       VGND,
-    input  wire       VPWR,
     input  wire [7:0] ui_in,    // Dedicated inputs
     output wire [7:0] uo_out,   // Dedicated outputs
     input  wire [7:0] uio_in,   // IOs: Input path
@@ -27,8 +25,6 @@ module tt_um_algofoogle_antonalog (
     wire [7:0] b;
 
     controller controller_0 (
-        .VPWR       (VPWR),
-        .VGND       (VGND),
         .ena        (ena),
         .clk        (clk),
         .rst_n      (rst_n),
@@ -56,19 +52,16 @@ module tt_um_algofoogle_antonalog (
     );
 
     r2r_dac red_dac (
-        .GND        (VGND),
         .IN         (r),
         .OUT        (ua[0])
     );
 
     r2r_dac green_dac (
-        .GND        (VGND),
         .IN         (g),
         .OUT        (ua[1])
     );
 
     r2r_dac blue_dac (
-        .GND        (VGND),
         .IN         (b),
         .OUT        (ua[2])
     );
@@ -77,11 +70,11 @@ module tt_um_algofoogle_antonalog (
     //NOTE: Using power ports instead of constants,
     // because the design is not synthesized,
     // but rather laid out by hand:
-    assign uio_oe[2] = VGND;
-    assign uio_oe[3] = VGND;
-    assign uio_oe[4] = VGND;
-    assign uio_oe[5] = VGND;
-    assign uio_oe[6] = VGND;
-    assign uio_oe[7] = VGND;
+    assign uio_oe[2] = 0;
+    assign uio_oe[3] = 0;
+    assign uio_oe[4] = 0;
+    assign uio_oe[5] = 0;
+    assign uio_oe[6] = 0;
+    assign uio_oe[7] = 0;
 
 endmodule
