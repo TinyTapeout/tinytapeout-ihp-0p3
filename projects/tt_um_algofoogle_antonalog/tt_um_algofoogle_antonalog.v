@@ -6,6 +6,8 @@
 `default_nettype none
 
 module tt_um_algofoogle_antonalog (
+    // input  wire       VGND,
+    // input  wire       VPWR,
     input  wire [7:0] ui_in,    // Dedicated inputs
     output wire [7:0] uo_out,   // Dedicated outputs
     input  wire [7:0] uio_in,   // IOs: Input path
@@ -18,20 +20,26 @@ module tt_um_algofoogle_antonalog (
 );
 
     // WARNING: Netget doesn't seem to like a pattern of:
-    //      wire [7:0] r, rn;
-    // as it incorrectly interprets only `r` as a bus, and `rn` as a single wire.
+    //      wire [7:0] dr, dg, db;
+    // as it incorrectly interprets only `dr` as a bus, and the rest as single wires.
+    wire [7:0] dr;
+    wire [7:0] dg;
+    wire [7:0] db;
+
     wire [7:0] r;
     wire [7:0] g;
     wire [7:0] b;
 
     controller controller_0 (
+        // .VPWR       (VPWR),
+        // .VGND       (VGND),
         .ena        (ena),
         .clk        (clk),
         .rst_n      (rst_n),
         .ui_in      (ui_in),
-        .dr         (r),
-        .dg         (g),
-        .db         (b),
+        .dr         (dr),   // Un-evenly buffered RGB outputs from controller.
+        .dg         (dg),   // Un-evenly buffered RGB outputs from controller.
+        .db         (db),   // Un-evenly buffered RGB outputs from controller.
         .r7         (uo_out[0]),
         .g7         (uo_out[1]),
         .b7         (uo_out[2]),
@@ -51,17 +59,31 @@ module tt_um_algofoogle_antonalog (
         .uio_oe     (uio_oe[1:0]) // I only connect 2 to the controller macro. The other 6 are directly connected to GND.
     );
 
+    rgb_buffers rgb_buffers_0 (
+        // IN: Un-evenly buffered RGB outputs from controller:
+        .dr (dr),
+        .dg (dg),
+        .db (db),
+        // OUT: All buffered by sg13g2_inv_8 buffers.
+        .r  (r),
+        .g  (g),
+        .b  (b)
+    );
+
     r2r_dac red_dac (
+        // .GND        (VGND),
         .IN         (r),
         .OUT        (ua[0])
     );
 
     r2r_dac green_dac (
+        // .GND        (VGND),
         .IN         (g),
         .OUT        (ua[1])
     );
 
     r2r_dac blue_dac (
+        // .GND        (VGND),
         .IN         (b),
         .OUT        (ua[2])
     );
@@ -70,11 +92,11 @@ module tt_um_algofoogle_antonalog (
     //NOTE: Using power ports instead of constants,
     // because the design is not synthesized,
     // but rather laid out by hand:
-    assign uio_oe[2] = 0;
-    assign uio_oe[3] = 0;
-    assign uio_oe[4] = 0;
-    assign uio_oe[5] = 0;
-    assign uio_oe[6] = 0;
-    assign uio_oe[7] = 0;
+    assign uio_oe[2] = 0; //VGND;
+    assign uio_oe[3] = 0; //VGND;
+    assign uio_oe[4] = 0; //VGND;
+    assign uio_oe[5] = 0; //VGND;
+    assign uio_oe[6] = 0; //VGND;
+    assign uio_oe[7] = 0; //VGND;
 
 endmodule
