@@ -74,3 +74,16 @@ modules:
           - x: 1680145
           - via: Via3_XY_so
           - y: 1500490
+  - name: "urish_dickson_pump"
+    x: 0
+    y: 5
+    analog_dedicated:
+      pins: "ana[9]"
+      paths:
+        "pad_raw[53]":
+          - x: 481690
+          - via: Via4_YX_so
+          - y: 1498490
+          - x: 319855
+          - via: Via3_XY_so
+          - y: 1500490
