@@ -1,6 +1,6 @@
 # Tiny Tapeout project information
 project:
-  title:        "HBT 555"      # Project title
+  title:        "HBT Comparator"      # Project title
   author:       "Nicklaus Thompson"      # Your name
   discord:      "fangameempire"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
   description:  "A high-speed 555 timer using SiGE NPN devices"      # One line description of what your project does
@@ -24,8 +24,8 @@ project:
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
   # Inputs
-  ui[0]: "VI_Timer_0_En"
-  ui[1]: "VI_Timer_1_En"
+  ui[0]: "VI_Comparator_En"
+  ui[1]: ""
   ui[2]: ""
   ui[3]: ""
   ui[4]: ""
@@ -34,7 +34,7 @@ pinout:
   ui[7]: ""
 
   # Outputs
-  uo[0]: "VO_Timer_0_Out"
+  uo[0]: ""
   uo[1]: ""
   uo[2]: ""
   uo[3]: ""
@@ -54,9 +54,9 @@ pinout:
   uio[7]: ""
 
   # Analog pins - make sure to also set "analog_pins" above, else the pins won't be connected
-  ua[0]: ""
-  ua[1]: ""
-  ua[2]: ""
+  ua[0]: "vinp"
+  ua[1]: "vinn"
+  ua[2]: "voutp"
   ua[3]: ""
   ua[4]: ""
   ua[5]: ""
