@@ -14,6 +14,10 @@ MACRO tt_um_NicklausThompson_555_1x1
       LAYER Metal5 ;
         RECT 16.000 0.000 18.200 152.980 ;
     END
+    PORT
+      LAYER Metal5 ;
+        RECT 150.93 0.000 153.13 152.980 ;
+    END
   END VGND
   PIN VPWR
     DIRECTION INOUT ;
@@ -21,6 +25,10 @@ MACRO tt_um_NicklausThompson_555_1x1
     PORT
       LAYER Metal5 ;
         RECT 20.000 0.000 22.200 152.980 ;
+    END
+    PORT
+      LAYER Metal5 ;
+        RECT 154.93 0.000 157.13 152.980 ;
     END
   END VPWR
   PIN clk
