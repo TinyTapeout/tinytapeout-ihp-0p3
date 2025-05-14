@@ -11,6 +11,8 @@ You can also include images in this folder and reference them in the markdown. E
 
 Displays a bouncing IHP logo on the screen, with animated color gradient.
 
+![IHP screensaver](screensaver.jpg)
+
 ## How to test
 
 Connect to a VGA monitor. Set the following inputs to configure the design:
