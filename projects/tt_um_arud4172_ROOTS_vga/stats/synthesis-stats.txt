@@ -1,0 +1,47 @@
+153. Printing statistics.
+
+=== tt_um_arud4172_ROOTS_vga ===
+
+   Number of wires:               3841
+   Number of wire bits:           3876
+   Number of public wires:          75
+   Number of public wire bits:     110
+   Number of ports:                  8
+   Number of port bits:             43
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               3784
+     sg13g2_a21o_1                  61
+     sg13g2_a21oi_1                497
+     sg13g2_a221oi_1               213
+     sg13g2_a22oi_1                153
+     sg13g2_and2_1                  61
+     sg13g2_and3_1                  26
+     sg13g2_and4_1                  14
+     sg13g2_buf_1                    2
+     sg13g2_dfrbp_1                 73
+     sg13g2_inv_1                   40
+     sg13g2_mux2_1                  34
+     sg13g2_mux4_1                   1
+     sg13g2_nand2_1                452
+     sg13g2_nand2b_1                56
+     sg13g2_nand3_1                329
+     sg13g2_nand3b_1                18
+     sg13g2_nand4_1                131
+     sg13g2_nor2_1                 435
+     sg13g2_nor2b_1                 31
+     sg13g2_nor3_1                 204
+     sg13g2_nor4_1                  71
+     sg13g2_o21ai_1                607
+     sg13g2_or2_1                   33
+     sg13g2_or3_1                   32
+     sg13g2_or4_1                   10
+     sg13g2_tiehi                   73
+     sg13g2_tielo                   16
+     sg13g2_xnor2_1                 74
+     sg13g2_xor2_1                  37
+
+   Chip area for module '\tt_um_arud4172_ROOTS_vga': 38557.474200
+     of which used for sequential elements: 3443.731200 (8.93%)
+
