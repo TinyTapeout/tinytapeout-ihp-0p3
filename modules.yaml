@@ -87,3 +87,7 @@ modules:
           - x: 319855
           - via: Via3_XY_so
           - y: 1398490
+# Colorful stripes - needs not to be covered by TopMetal2:
+  - name: "colorful_stripes"
+    x: 3
+    y: 7
