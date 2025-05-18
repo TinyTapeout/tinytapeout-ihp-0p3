@@ -148,7 +148,7 @@ MACRO tt_um_algofoogle_antonalog
   END uio_oe[1]
   PIN uio_oe[2]
     ANTENNAGATEAREA 655.000000 ;
-    ANTENNADIFFAREA 1893.822998 ;
+    ANTENNADIFFAREA 1895.992310 ;
     PORT
       LAYER Metal5 ;
         RECT 48.810 153.980 49.110 154.980 ;
@@ -156,7 +156,7 @@ MACRO tt_um_algofoogle_antonalog
   END uio_oe[2]
   PIN uio_oe[3]
     ANTENNAGATEAREA 655.000000 ;
-    ANTENNADIFFAREA 1893.822998 ;
+    ANTENNADIFFAREA 1895.992310 ;
     PORT
       LAYER Metal5 ;
         RECT 44.970 153.980 45.270 154.980 ;
@@ -164,7 +164,7 @@ MACRO tt_um_algofoogle_antonalog
   END uio_oe[3]
   PIN uio_oe[4]
     ANTENNAGATEAREA 655.000000 ;
-    ANTENNADIFFAREA 1893.822998 ;
+    ANTENNADIFFAREA 1895.992310 ;
     PORT
       LAYER Metal5 ;
         RECT 41.130 153.980 41.430 154.980 ;
@@ -172,7 +172,7 @@ MACRO tt_um_algofoogle_antonalog
   END uio_oe[4]
   PIN uio_oe[5]
     ANTENNAGATEAREA 655.000000 ;
-    ANTENNADIFFAREA 1893.822998 ;
+    ANTENNADIFFAREA 1895.992310 ;
     PORT
       LAYER Metal5 ;
         RECT 37.290 153.980 37.590 154.980 ;
@@ -180,7 +180,7 @@ MACRO tt_um_algofoogle_antonalog
   END uio_oe[5]
   PIN uio_oe[6]
     ANTENNAGATEAREA 655.000000 ;
-    ANTENNADIFFAREA 1893.822998 ;
+    ANTENNADIFFAREA 1895.992310 ;
     PORT
       LAYER Metal5 ;
         RECT 33.450 153.980 33.750 154.980 ;
@@ -188,7 +188,7 @@ MACRO tt_um_algofoogle_antonalog
   END uio_oe[6]
   PIN uio_oe[7]
     ANTENNAGATEAREA 655.000000 ;
-    ANTENNADIFFAREA 1893.822998 ;
+    ANTENNADIFFAREA 1895.992310 ;
     PORT
       LAYER Metal5 ;
         RECT 29.610 153.980 29.910 154.980 ;
@@ -340,7 +340,7 @@ MACRO tt_um_algofoogle_antonalog
   END ua[3]
   PIN VGND
     ANTENNAGATEAREA 655.000000 ;
-    ANTENNADIFFAREA 1893.822998 ;
+    ANTENNADIFFAREA 1895.992310 ;
     PORT
       LAYER Metal5 ;
         RECT 4.000 0.000 8.000 152.980 ;
@@ -348,7 +348,7 @@ MACRO tt_um_algofoogle_antonalog
   END VGND
   PIN VPWR
     ANTENNAGATEAREA 275.100006 ;
-    ANTENNADIFFAREA 2388.970459 ;
+    ANTENNADIFFAREA 2388.849121 ;
     PORT
       LAYER Metal5 ;
         RECT 197.200 0.000 201.200 152.980 ;
@@ -356,7 +356,7 @@ MACRO tt_um_algofoogle_antonalog
   END VPWR
   OBS
       LAYER GatPoly ;
-        RECT 14.370 9.410 193.970 145.790 ;
+        RECT 14.070 9.410 193.970 145.790 ;
       LAYER Metal1 ;
         RECT 10.130 9.340 193.970 151.610 ;
       LAYER Metal2 ;
