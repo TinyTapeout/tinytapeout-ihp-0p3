@@ -87,7 +87,10 @@ modules:
           - x: 319855
           - via: Via3_XY_so
           - y: 1398490
-# Colorful stripes - needs not to be covered by TopMetal2:
+# Projects with diffraction patterns - needs not to be covered by TopMetal2:
+  - name: "htfab_yadge"
+    x: 0
+    y: 7
   - name: "colorful_stripes"
     x: 3
     y: 7
